@@ -1,0 +1,182 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================
+   BODY
+========================== */
+
+body{
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #021b3a,
+        #07305f
+    );
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+
+    width:100%;
+    max-width:1000px;
+
+    text-align:center;
+
+    padding:30px;
+}
+
+/* ==========================
+   TITLE
+========================== */
+
+h1{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+    color:white;
+
+    font-weight:700;
+}
+
+.subtitle{
+
+    color:#b6c8df;
+
+    font-size:16px;
+
+    margin-bottom:30px;
+}
+
+/* ==========================
+   CAMERA BOX
+========================== */
+
+.camera-box{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-bottom:25px;
+}
+
+/* video disembunyikan */
+video{
+
+    display:none;
+}
+
+/* ==========================
+   CANVAS
+========================== */
+
+canvas{
+
+    width:800px;
+    max-width:100%;
+
+    border-radius:18px;
+
+    border:3px solid #00c3ff;
+
+    background:black;
+
+    box-shadow:
+        0 0 15px rgba(0,195,255,.4),
+        0 0 40px rgba(0,195,255,.2);
+
+    transition:.3s;
+}
+
+canvas:hover{
+
+    transform:scale(1.01);
+}
+
+/* ==========================
+   STATUS CARD
+========================== */
+
+.status-card{
+
+    display:inline-block;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(8px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:15px;
+
+    padding:15px 30px;
+
+    min-width:250px;
+}
+
+.status-card h3{
+
+    color:#00ff88;
+
+    font-size:24px;
+
+    font-weight:600;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+.footer{
+
+    margin-top:25px;
+
+    color:#9fb5d1;
+
+    font-size:14px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    h1{
+        font-size:30px;
+    }
+
+    .subtitle{
+        font-size:14px;
+    }
+
+    .status-card h3{
+        font-size:20px;
+    }
+
+    canvas{
+        width:100%;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Realtime Face Detection</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Realtime Face Detection</h1>
+
+<p class="subtitle">
+Deteksi Wajah Realtime Menggunakan Flask + OpenCV
+</p>
+
+<div class="camera-box">
+
+<video
+id="video"
+autoplay
+playsinline>
+</video>
+
+<canvas id="canvas"></canvas>
+
+</div>
+
+<div class="status-card">
+
+<h3 id="faceCount">
+Wajah Terdeteksi: 0
+</h3>
+
+</div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
